@@ -1,0 +1,341 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo a {
+    color: inherit;  /* Inherit the color from the parent element */
+    text-decoration: none;  /* Remove the underline */
+}
+
+.logo a:hover {
+    color: inherit; /* Ensures the color doesn't change on hover */
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #d4a76a;
+    font-weight: bold;
+}
+
+nav ul.center-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav ul.center-links li {
+    display: inline;
+}
+
+nav ul.center-links li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul.center-links li a:hover {
+    color: #d4a76a;
+}
+
+.right-links {
+    display: flex;
+    gap: 10px;
+}
+
+.right-links .btn-small {
+    padding: 8px 15px;
+    background-color: #d4a76a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+.right-links .btn-small:hover {background-color: #b98957;}
+
+   
+
+
+.about-us-container {
+    padding: 50px;
+    max-width: 1900px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-us-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #d4a76a;
+}
+
+.about-us-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.about-us-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.about-us-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.about-us-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 0 30px;
+}
+
+.about-us-content {
+    max-width: 600px;
+}
+
+.about-us-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #d4a76a;
+}
+
+.about-us-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-us-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-us-content ul li {
+    margin-bottom: 5px;
+}
+
+.history-awards-section {
+    text-align: center;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-awards-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #d4a76a;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 33.3333%; /* Show 3 items at a time */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /* Fixed height for all carousel items */
+    background-color: #f7f7f7; /* Optional: background color */
+    overflow: hidden; /* Ensure content fits within the height */
+}
+
+.carousel-item img {
+    width: auto; /* Auto width to maintain aspect ratio */
+    max-width: 200px; /* Maximum width for images */
+    height: auto; /* Height auto to maintain aspect ratio */
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.carousel-item div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.carousel-item strong {
+    display: block;
+    margin: 10px 0;
+    font-size: 1em; /* Ensure font size fits within the fixed height */
+    color: #333; /* Adjust color for better visibility */
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel-control.left {
+    left: 10px;
+}
+
+.carousel-control.right {
+    right: 10px;
+}
+
+
+
+footer {
+    background-color: #f9f7f0;
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.btn-consultation {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d4a76a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-consultation:hover {
+    background-color: #b98957;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #d4a76a;
+}
+
+.footer-column p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.footer-column a {
+    color: #d4a76a;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #b98957;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem; 
+    text-decoration: none;
+    color:  #d4a76a; /* Dark grey color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; 
+}
+
+.logo:hover {
+    color: #D4AF37; /* Gold color on hover */
+    transform: translateY(3px); /* Slight lift effect */
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6); /* Gold glow effect */
+}
+

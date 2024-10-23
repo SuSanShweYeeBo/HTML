@@ -1,0 +1,353 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: inherit;  /* Inherit the color from the parent element */
+    text-decoration: none;  /* Remove the underline */
+}
+
+.logo a:hover {
+    color: inherit; /* Ensures the color doesn't change on hover */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #d4a76a;
+    font-weight: bold;
+}
+
+nav ul.center-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav ul.center-links li {
+    display: inline;
+}
+
+nav ul.center-links li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul.center-links li a:hover {
+    color: #d4a76a;
+}
+
+.right-links {
+    display: flex;
+    gap: 10px;
+}
+
+.right-links .btn-small {
+    padding: 8px 15px;
+    background-color: #d4a76a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+.right-links .btn-small:hover {background-color: #b98957;}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Adjust height to leave space for header */
+    width: 100%;
+    margin-top: 20px; /* Add space between the header and the login section */
+}
+
+.login-box {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Sign In Section */
+.sign-in-section {
+    width: 50%;
+    padding: 40px;
+}
+
+.sign-in-section h2 {
+    font-size: 24px;
+    color: #d4a76a; /* Match the gold tone from header/footer */
+    margin-bottom: 20px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.social-login a {
+    margin-right: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e0bb86;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    background-color: #f9f7f0; /* Input background color */
+    color: #333; /* Input text color */
+}
+
+.form-group input::placeholder {
+    color: #d4a76a; /* Placeholder text color */
+}
+
+.form-group input:focus {
+    border-color: #d4a76a; /* Gold border on focus */
+}
+
+/* Apply to both user and password fields */
+.user-input,
+.password-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #f9f7f0; /* Input background color */
+    color: #333; /* Input text color */
+}
+
+.user-input::placeholder,
+.password-input::placeholder {
+    color: #d4a76a; /* Placeholder text color */
+}
+
+.user-input:focus,
+.password-input:focus {
+    border-color: #d4a76a; /* Gold border on focus */
+}
+
+/* Remember Me Section */
+.remember-me {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    gap: 15px; /* Adds space between the checkbox and the "Forgot Password" link */
+    font-size: 14px;
+}
+
+.remember-me label {
+    display: flex;
+    align-items: center;
+    color: #d4a76a;
+}
+
+.forgot-password {
+    color: #d4a76a;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: #b98957; /* Hover color for consistency */
+}
+
+.btn-signin {
+    width: 100%;
+    padding: 12px;
+    background-color: #e0b87f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-signin:hover {
+    background-color: #b98957;
+}
+
+/* Welcome Section */
+.welcome-section {
+    width: 50%;
+    background: linear-gradient(135deg,  #dcb175,  #f1d6b2); /* Bright background contrast */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.welcome-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-signup {
+    padding: 12px 30px;
+    background-color: #fff;
+    color:  #d4a76a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signup:hover {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #f9f7f0;
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.btn-consultation {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d4a76a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-consultation:hover {
+    background-color: #b98957;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #d4a76a;
+}
+
+.footer-column p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.footer-column a {
+    color: #d4a76a;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #b98957;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem; 
+    text-decoration: none;
+    color:  #d4a76a; /* Dark grey color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; 
+}
+
+.logo:hover {
+    color: #D4AF37; /* Gold color on hover */
+    transform: translateY(3px); /* Slight lift effect */
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6); /* Gold glow effect */
+}
