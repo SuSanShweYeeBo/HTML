@@ -1,0 +1,245 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul.center-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav ul.center-links li {
+    display: inline;
+}
+
+nav ul.center-links li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul.center-links li a:hover {
+    color: #d4a76a;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #d4a76a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.right-links {
+    display: flex;
+    gap: 10px;
+}
+
+.right-links .btn-small {
+    padding: 8px 15px;
+    background-color: #d4a76a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+.right-links .btn-small:hover {background-color: #b98957;}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #d4a76a;
+}
+
+.footer-column p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.footer-column a {
+    color: #d4a76a;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #b98957;
+}
+
+footer {
+    background-color: #f9f7f0;
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.btn-consultation {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d4a76a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-consultation:hover {
+    background-color: #b98957;
+}
+
+.promotions {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.promotions h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.promotions p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.promotion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; /* Reduced gap between boxes */
+}
+
+.promotion-item {
+    background-color: #fff;
+    padding: 15px; /* Reduced padding inside each box */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.promotion-item:hover {
+    transform: scale(1.05);
+}
+
+.promotion-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.promotion-item p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.promotion-item .price {
+    font-size: 1.5em;
+    color: #E67E22;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .promotion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .promotion-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem; 
+    text-decoration: none;
+    color:  #d4a76a; /* Dark grey color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; 
+}
+
+.logo:hover {
+    color: #D4AF37; /* Gold color on hover */
+    transform: translateY(3px); /* Slight lift effect */
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6); /* Gold glow effect */
+}
+
